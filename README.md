@@ -26,12 +26,17 @@ your bot. (Once RoyaleBot is on PyPI, this is just `pip install "royalebot[bots]
 
 ## 1. Prepare the game
 
-Your bot plays through a prepared copy of the Nulls app. The prep tool is distributed on
-its own, separately from this package — grab it from the project's downloads. Point it at
-the app file you downloaded:
+Your bot plays through a prepared copy of the Nulls app. The prep tool, **rb-build**, is a
+separate download (not in this package). Get `rb-build.exe` from the latest release, and
+verify it against the checksum shown there:
+
+<https://github.com/RoyaleGym/RoyaleBot/releases/latest>
+
+Windows only for now. It uses the standard Android build tools (a JDK, the Android SDK, and
+apktool) — see [the guide](docs/bots.md) for the one-time setup. Then point it at your app:
 
 ```bash
-rb-build build nulls-royale.apk --out nulls-royalebot.apk
+rb-build.exe build nulls-royale.apk --out nulls-royalebot.apk
 ```
 
 Install `nulls-royalebot.apk` on your device and sign in to your Nulls account.

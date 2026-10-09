@@ -26,18 +26,28 @@ For a real bot, train one with RoyaleLearn and point RoyaleBot at its saved fold
 
 ## Prepare your copy of the game
 
-The prep tool comes on its own, separately from this package — grab it from the project's
-downloads. Point it at your Nulls app file:
+The prep tool, **rb-build**, is a separate download. Get `rb-build.exe` from the latest
+release and verify it against the checksum there:
+<https://github.com/RoyaleGym/RoyaleBot/releases/latest> (Windows only for now).
+
+One-time setup — rb-build drives the standard Android build tools, so install these and tell
+it where they are:
+
+- A **JDK** (17 or newer) on your `PATH` (or set `JAVA_HOME`).
+- The **Android SDK** build-tools and platform-tools; set `ANDROID_HOME` to the SDK folder.
+- **apktool**; set `ROYALEBOT_APKTOOL` to its `.jar`.
+
+Then point it at your Nulls app file:
 
 ```bash
-rb-build build nulls-royale.apk --out nulls-royalebot.apk
+rb-build.exe build nulls-royale.apk --out nulls-royalebot.apk
 ```
 
 Install the result on your device and sign in to Nulls. You supply the app file yourself.
 When Nulls puts out an update, wait for an updated tool before you build again.
 
-`rb-build check nulls-royale.apk` tells you whether a file is one the tool supports, before
-you build.
+`rb-build.exe check nulls-royale.apk` tells you whether a file is one the tool supports,
+before you build.
 
 ## Run
 
