@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "royalebot"
+version = "0.1.0"
+description = "Play the bot you made with RoyaleGym in Nulls Royale."
+requires-python = ">=3.12"
+license = { text = "MIT" }
+readme = "README.md"
+dependencies = ["msgspec>=0.18"]
+
+[project.optional-dependencies]
+bots = ["royalegym[all]>=0.1.19", "royalelearn>=0.5.12", "royaleimitate>=0.2.10", "royaleviser>=0.1.2"]
+
+[project.urls]
+Homepage = "https://github.com/RoyaleGym/RoyaleBot"
+
+[project.scripts]
+royalebot-play = "royalebot.play:main"
+
+[tool.setuptools]
+packages = ["royalebot"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
