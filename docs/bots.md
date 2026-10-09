@@ -48,7 +48,9 @@ royalebot-play --bot work/testbot
 Then start a battle in the game. Useful flags:
 
 - `--dry-run` — show the moves, don't play them. Good for a first look.
-- `--serial ...` — pick the device by the serial `adb devices` shows (or set `ROYALEBOT_SERIAL`).
+- `--serial ...` — pick the device. RoyaleBot uses the one attached phone on its own; for an
+  emulator, or more than one device, pass `--serial 127.0.0.1:<its adb port>` (the emulator
+  shows its adb port in its settings), or set `ROYALEBOT_SERIAL`.
 - `--team 0` / `--team 1` — set your seat by hand. RoyaleBot usually works it out; in a
   match between two bots you may need to say.
 - `--greedy` — always take the bot's top move, instead of sampling.

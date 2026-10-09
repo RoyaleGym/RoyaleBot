@@ -71,7 +71,11 @@ class Device:
             if len(attached) == 1:
                 serial = attached[0]
             elif not attached:
-                raise Refused("No device found. Plug one in or start your emulator (`adb devices` should list it).")
+                raise Refused(
+                    "No device found. Plug a phone in, or for an emulator pass "
+                    "--serial 127.0.0.1:<its adb port> (the emulator shows its adb port in its settings). "
+                    "An emulator is not listed until it is connected, which passing --serial does for you."
+                )
             else:
                 raise Refused(f"More than one device: pass --serial (one of {', '.join(attached)}).")
         return cls(adb, serial, port)

@@ -48,10 +48,12 @@ Plug in your device (or start your emulator) and run:
 royalebot-play --bot path/to/your/bot
 ```
 
-It uses the one attached device; if you have more than one, add `--serial` (the serial
-`adb devices` shows). Start a battle in the game. Your bot takes over and plays each match
-it sees. Add `--dry-run` to watch what it *would* play without actually playing, or
-`--viser` to see the match in [RoyaleViser](https://github.com/RoyaleGym/RoyaleViser).
+It uses the one attached phone. For an emulator, or if you have more than one device, add
+`--serial 127.0.0.1:<its adb port>` (the emulator shows its adb port in its settings). Start
+a battle in the game.
+Your bot takes over and plays each match it sees. Add `--dry-run` to watch what it *would*
+play without actually playing, or `--viser` to see the match in
+[RoyaleViser](https://github.com/RoyaleGym/RoyaleViser).
 
 That's it. Your bot's plays follow the normal game rules, so the match is a normal Nulls
 match.
