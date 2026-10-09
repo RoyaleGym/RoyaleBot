@@ -76,6 +76,6 @@ stops with a clear message, rather than flailing. Pass `--team` to set the seat.
 
 ## Fair play
 
-RoyaleBot runs on Nulls Royale only and refuses the official game. Put **AI** or **Bot** in
-your in-game name, so the people you play know. Play your own account, follow Nulls' own
-rules, and don't use a bot to spoil other people's matches.
+RoyaleBot is made for Nulls Royale only. Put **AI** or **Bot** in your in-game name, so the
+people you play know. Play your own account, follow Nulls' own rules, and don't use a bot to
+spoil other people's matches.

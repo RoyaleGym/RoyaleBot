@@ -4,8 +4,7 @@ Play a bot you made with [RoyaleGym](https://github.com/RoyaleGym/RoyaleGym) in 
 Royale**, a fan-run server for Clash Royale. You train a bot the usual way; RoyaleBot puts
 it in a real match on Nulls and lets it play, card by card.
 
-RoyaleBot works only on Nulls Royale. It never touches the official Clash Royale app, and
-it refuses to run against it.
+RoyaleBot is made for Nulls Royale. It never touches the official Clash Royale app.
 
 You bring the bot; RoyaleBot handles getting it into the game.
 
@@ -60,7 +59,7 @@ match.
 
 ## Fair play
 
-- **Nulls only.** RoyaleBot will not run on the official game.
+- RoyaleBot is made for Nulls Royale only.
 - Put **AI** or **Bot** somewhere in your in-game name, so the people you play know.
 - Play your own account. Don't use RoyaleBot to grief, and follow Nulls' own rules.
 
@@ -70,8 +69,7 @@ Your device runs your prepared copy of the Nulls app, which shares each battle w
 `royalebot` package on your PC. There your bot — the exact network, observation and action
 code it was trained with — picks a move, and the app makes the play.
 
-How the app is prepared is specific to Nulls and is not covered here. RoyaleBot refuses the
-official game.
+How the app is prepared is specific to Nulls and is not covered here.
 
 ## License
 
