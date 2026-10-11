@@ -35,15 +35,18 @@ it where they are:
 
 - A **JDK** (17 or newer) on your `PATH` (or set `JAVA_HOME`).
 - The **Android SDK** build-tools and platform-tools; set `ANDROID_HOME` to the SDK folder.
-- **apktool**; set `ROYALEBOT_APKTOOL` to its `.jar`.
+- **apktool 2.12.1** (rb-build checks for exactly this version); set `ROYALEBOT_APKTOOL` to its
+  `.jar`.
 
-Then point it at your Nulls app file:
+Download the Nulls Royale app (the `.apk` file) yourself from Nulls' own page,
+<https://nulls.gg/servers/nulls-royale/>. rb-build supports **Nulls Royale 15.535.13**, the
+version that page has today. Then point it at the file:
 
 ```bash
 rb-build.exe build nulls-royale.apk --out nulls-royalebot.apk
 ```
 
-Install the result on your device and sign in to Nulls. You supply the app file yourself.
+Install the result on your device and sign in to Nulls.
 When Nulls puts out an update, wait for an updated tool before you build again.
 
 `rb-build.exe check nulls-royale.apk` tells you whether a file is one the tool supports,

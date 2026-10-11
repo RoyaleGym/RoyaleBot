@@ -12,7 +12,8 @@ You bring the bot; RoyaleBot handles getting it into the game.
 
 - A bot folder saved by RoyaleLearn (`Learner.save(...)`). A bot you trained or cloned.
 - An Android device or emulator that runs ARM64 apps (a phone, or MEmu with an ARM64 image).
-- Your own copy of the Nulls Royale app, and a Nulls account to play on.
+- The Nulls Royale app (version 15.535.13), which you download yourself from
+  [Nulls' Royale page](https://nulls.gg/servers/nulls-royale/), and a Nulls account to play on.
 - Python 3.12 on your PC.
 
 ## Install
@@ -33,7 +34,15 @@ verify it against the checksum shown there:
 <https://github.com/RoyaleGym/RoyaleBot/releases/latest>
 
 Windows only for now. It uses the standard Android build tools (a JDK, the Android SDK, and
-apktool) — see [the guide](docs/bots.md) for the one-time setup. Then point it at your app:
+apktool) — see [the guide](docs/bots.md) for the one-time setup.
+
+Download the Nulls Royale app (the `.apk` file) yourself from Nulls' own page:
+
+<https://nulls.gg/servers/nulls-royale/>
+
+rb-build supports **Nulls Royale 15.535.13**, the version that page has today.
+`rb-build.exe check nulls-royale.apk` tells you whether your file is supported. When Nulls
+releases a new version, wait for an updated rb-build. Then point it at your app:
 
 ```bash
 rb-build.exe build nulls-royale.apk --out nulls-royalebot.apk
