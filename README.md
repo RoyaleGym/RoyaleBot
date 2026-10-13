@@ -10,7 +10,10 @@ You bring the bot; RoyaleBot handles getting it into the game.
 
 ## What you need
 
-- A bot folder saved by RoyaleLearn (`Learner.save(...)`). A bot you trained or cloned.
+- A bot folder saved by RoyaleLearn (`Learner.save(...)`). A bot you trained or cloned. For the
+  best results, train it on the version Nulls runs with `make_env(client="15.535.29")`
+  (royalegym 0.1.24 or newer; see
+  [Playing on Nulls Royale](https://royalegym.github.io/RoyaleGym/clash-royale/nulls-royale/)).
 - An Android device or emulator that runs ARM64 apps (a phone, or MEmu with an ARM64 image).
 - The Nulls Royale app (version 15.535.13), which you download yourself from
   [Nulls' Royale page](https://nulls.gg/servers/nulls-royale/), and a Nulls account to play on.
