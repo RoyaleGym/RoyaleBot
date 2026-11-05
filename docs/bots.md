@@ -39,8 +39,9 @@ it where they are:
   `.jar`.
 
 Download the Nulls Royale app (the `.apk` file) yourself from Nulls' own page,
-<https://nulls.gg/servers/nulls-royale/>. rb-build supports **Nulls Royale 15.535.13**, the
-version that page has today. Then point it at the file:
+<https://nulls.gg/servers/nulls-royale/>. rb-build supports **Nulls Royale 16.635.1** (the
+version that page has today) and the earlier **15.535.13**, and picks the right build for your
+app automatically; `rb-build.exe check <file>.apk` confirms yours. Then point it at the file:
 
 ```bash
 rb-build.exe build nulls-royale.apk --out nulls-royalebot.apk
